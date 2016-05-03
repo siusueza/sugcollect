@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container ">
+		<h2 class="text-center">新用户注册</h2>
+			<form action="register.php" role = "form" method="POST">
+				<div class="form-group">
+					<div class="row">
+						<label for="inputNumber" class=" col-sm-4 text-right ">学号</label>
+							<div class="col-sm-4">							
+				    			<input type="text" class="form-control" id="inputNumber" placeholder="Number" name="Number">
+				    		</div>
+			   	 	</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<label for="inputName" class=" col-sm-4 text-right ">真实姓名</label>
+							<div class="col-sm-4">							
+				    			<input type="text" class="form-control" id="inputName" placeholder="Name" name="Name">
+				    		</div>
+			   	 	</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<label for="inputNicname" class=" col-sm-4 text-right ">昵称</label>
+							<div class="col-sm-4">							
+				    			<input type="text" class="form-control" id="inputNicname" placeholder="Nicname" name="Nicname">
+				    		</div>
+			   	 	</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+			    		<label for="inputPassword" class="col-sm-4 text-right">密码</label>
+					   	 	<div class="col-sm-4">
+					    		<input type="password" class="form-control" id="inputPassword" placeholder="Password" name="Password">
+				    		</div>
+			   		</div>
+				</div>
+
+			    <div class="form-group">
+			    	<div class="row">
+				    	<label for="inputPassword" class="col-sm-4 text-right control-label">再次输入密码</label>
+					    	<div class="col-sm-4">
+					    		<input type="password" class="form-control" id="inputPassword" placeholder="Repeat Password" name="Repassword">
+				    		</div>
+				    </div>
+				</div>
+
+				<div class="row">
+			 		<button type="submit" onclick="disp_alert()" class="btn btn-primary col-sm-offset-7">立即注册</button>
+			 	</div>
+			 </form>
+	</div> 
+</body>
+</html>
